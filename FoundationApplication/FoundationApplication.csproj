@@ -46,6 +46,9 @@
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="SumOfTwoNumbers.cs" />
+    <Compile Include="Variables\ConstantCS.cs" />
+    <Compile Include="Variables\DisplayVariables.cs" />
+    <Compile Include="Variables\MulltipleVariables.cs" />
     <Compile Include="Variables\VariablesCS.cs" />
   </ItemGroup>
   <ItemGroup>

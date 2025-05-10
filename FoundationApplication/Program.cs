@@ -1,5 +1,4 @@
-﻿
-using FoundationApplication.Variables;
+﻿using FoundationApplication.Variables;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -18,6 +17,9 @@ namespace FoundationApplication
 
 			// CREATING THE OBJECT TO CALL THE METHODS
 			VariablesCS variables = new VariablesCS();
+			ConstantCS constant = new ConstantCS();
+			DisplayVariables displayVariables = new DisplayVariables();
+			MulltipleVariables mulltipleVariables = new MulltipleVariables();
 
 			Console.Write("\n 1. Variables " +
 						  "\n 2. Data Types " +
@@ -76,6 +78,62 @@ namespace FoundationApplication
 								case 3:
 									Console.WriteLine($"\n{VariablesPath}\n");
 									variables.Example3();
+									break;
+							}
+							break;
+
+						case 2:
+							Console.Write("1. Example 1" +
+								"\n\nWhat Are You Looking For: ");
+
+							SelectExample = Convert.ToInt32(Console.ReadLine());
+
+							switch (SelectExample)
+							{
+								case 1:
+									constant.Example1();
+									break;
+							}
+							break;
+
+						case 3:
+							Console.Write("1. Example 1" +
+								         "\n2. Example 2" +
+										 "\n3. Example 3" +
+								"\n\nWhat Are You Looking For: ");
+							SelectExample = Convert.ToInt32(Console.ReadLine());
+
+							switch (SelectExample)
+							{
+								case 1:
+									displayVariables.Example1();
+									break;
+
+								case 2:
+									displayVariables.Example2();
+									break;
+
+								case 3:
+									displayVariables.Example3();
+									break;
+							}
+
+							break;
+
+						case 4:
+							Console.Write("1. Example 1 \n" +
+											  "2. Example 2" +
+											  "\n\n What Are You Looking For: ");
+							SelectExample = Convert.ToInt32(Console.ReadLine());
+
+							switch (SelectExample)
+							{
+								case 1:
+									mulltipleVariables.Example1();
+									break;
+
+								case 2:
+									mulltipleVariables.Example2();
 									break;
 							}
 							break;
