@@ -52,22 +52,38 @@ namespace FoundationApplication
 
 					switch (AnotherValue)
 					{
-						case 1:
-							Console.WriteLine($"\n{VariablesPath}\n");
-							variables.Example1();
-							break;
 
-						case 2:
-							Console.WriteLine($"\n{VariablesPath}\n");
-							variables.Example2();
+						case 1:
+							Console.Write("\n 1. Example 1 " +
+											  "\n 2. Examplen 2 " +
+											  "\n 3. Example 3" +
+											  "\n\n What Are You Looking For: ");
+
+							int SelectExample = Convert.ToInt32(Console.ReadLine());
+
+							switch (SelectExample)
+							{
+								case 1:
+									Console.WriteLine($"\n{VariablesPath}\n");
+									variables.Example1();
+									break;
+
+								case 2:
+									Console.WriteLine($"\n{VariablesPath}\n");
+									variables.Example2();
+									break;
+
+								case 3:
+									Console.WriteLine($"\n{VariablesPath}\n");
+									variables.Example3();
+									break;
+							}
 							break;
 					}
-
 					break;
 
 
 			}
-
 			Console.ReadKey();
 		}
 	}

@@ -17,8 +17,16 @@ namespace FoundationApplication.Variables
 
 		public void Example2()
 		{
-			Console.WriteLine("Create a variable called myNum of type int and assign it the value 15:");
+			Console.WriteLine("EX.2) Create a variable called myNum of type int and assign it the value 15:");
 			int myNum = 15;
+			Console.WriteLine(myNum);
+		}
+
+		public void Example3()
+		{
+			Console.WriteLine("EX.3) Change the value of myNum to 20:");
+			int myNum = 15;
+			myNum = 20;
 			Console.WriteLine(myNum);
 		}
 	}
