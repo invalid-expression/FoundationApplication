@@ -32,7 +32,7 @@ namespace FoundationApplication
 
 			Console.Write("\n 1. Variables " +
 						  "\n 2. Data Types " +
-						  "\n 3. TYpe Casting " +
+						  "\n 3. Type Casting " +
 						  "\n 4. User Input " +
 						  "\n 5. Operators " +
 						  "\n 6. Math " +
@@ -209,8 +209,9 @@ namespace FoundationApplication
 
 
 				case 3:
-					Console.WriteLine("1. Implicit \n" +
+					Console.Write("1. Implicit \n" +
 									  "2. Explicit" +
+									  "\n3. Conversation Method" +
 									  "\n\n What Are You Looking For: ");
 
 					SelectExample = Convert.ToInt32(Console.ReadLine());
@@ -224,6 +225,10 @@ namespace FoundationApplication
 							case 2:
 								typeCasting.Explicit();
 								break;
+
+						case 3:
+							typeCasting.ConvertionMethod();
+							break;
 						}
 
 					break;
