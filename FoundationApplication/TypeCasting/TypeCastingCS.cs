@@ -32,7 +32,7 @@ namespace FoundationApplication.TypeCasting
 			Console.WriteLine(Convert.ToString(MyNum));
 			Console.WriteLine(Convert.ToDouble(MyNum));
 			Console.WriteLine(Convert.ToInt32(MyDouble));
-			Console.WriteLine(Convert.ToString(MyBool));
+			Console.WriteLine(Convert.ToString(MyBool));  
 		}
 	}
 }

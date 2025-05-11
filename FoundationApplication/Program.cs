@@ -209,9 +209,9 @@ namespace FoundationApplication
 
 
 				case 3:
-					Console.Write("1. Implicit \n" +
+					Console.WriteLine("1. Implicit \n" +
 									  "2. Explicit" +
-									  "\n3. Conversation Method" +
+									  "3. Conversation Method" +
 									  "\n\n What Are You Looking For: ");
 
 					SelectExample = Convert.ToInt32(Console.ReadLine());
