@@ -1,4 +1,5 @@
 ﻿using FoundationApplication.DataTypes;
+using FoundationApplication.TypeCasting;
 using FoundationApplication.Variables;
 using System;
 using System.Collections.Generic;
@@ -15,6 +16,8 @@ namespace FoundationApplication
 		{
 			// VARIABLE DECLARATIONS
 			int SelectExample;
+			int AnotherValue;
+			int Value;
 
 			// DECLARING THE PATH STRING
 			string VariablesPath = "C# Variables - Variables";
@@ -25,6 +28,7 @@ namespace FoundationApplication
 			DisplayVariables displayVariables = new DisplayVariables();
 			MulltipleVariables mulltipleVariables = new MulltipleVariables();
 			DataTypesCS dataTypes = new DataTypesCS();
+			TypeCastingCS typeCasting = new TypeCastingCS();
 
 			Console.Write("\n 1. Variables " +
 						  "\n 2. Data Types " +
@@ -42,7 +46,7 @@ namespace FoundationApplication
 						  "\n 14. Array" +
 						  "\n\n What Are You Looking For: ");
 
-			int Value = Convert.ToInt32(Console.ReadLine());
+			Value = Convert.ToInt32(Console.ReadLine());
 
 			switch (Value)
 			{
@@ -55,7 +59,7 @@ namespace FoundationApplication
 									  "\n 5. Identifiers" +
 									  "\n\n What Are You Looking For: ");
 
-					int AnotherValue = Convert.ToInt32(Console.ReadLine());
+					AnotherValue = Convert.ToInt32(Console.ReadLine());
 
 					switch (AnotherValue)
 					{
@@ -197,6 +201,30 @@ namespace FoundationApplication
 							dataTypes.Strings();
 							break;
 					}
+
+					break;
+
+
+
+
+
+				case 3:
+					Console.WriteLine("1. Implicit \n" +
+									  "2. Explicit" +
+									  "\n\n What Are You Looking For: ");
+
+					SelectExample = Convert.ToInt32(Console.ReadLine());
+
+						switch (SelectExample)
+						{
+							case 1:
+								typeCasting.Implicit();
+								break;
+
+							case 2:
+								typeCasting.Explicit();
+								break;
+						}
 
 					break;
 			}
