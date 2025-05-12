@@ -1,5 +1,6 @@
 ﻿using FoundationApplication.DataTypes;
 using FoundationApplication.TypeCasting;
+using FoundationApplication.UserInput;
 using FoundationApplication.Variables;
 using System;
 using System.Collections.Generic;
@@ -29,6 +30,7 @@ namespace FoundationApplication
 			MulltipleVariables mulltipleVariables = new MulltipleVariables();
 			DataTypesCS dataTypes = new DataTypesCS();
 			TypeCastingCS typeCasting = new TypeCastingCS();
+			UserInputCS userInput = new UserInputCS();
 
 			Console.Write("\n 1. Variables " +
 						  "\n 2. Data Types " +
@@ -209,9 +211,9 @@ namespace FoundationApplication
 
 
 				case 3:
-					Console.WriteLine("1. Implicit \n" +
-									  "2. Explicit" +
-									  "3. Conversation Method" +
+					Console.WriteLine("1. Implicit" +
+									  "\n2. Explicit" +
+									  "\n3. Conversation Method" +
 									  "\n\n What Are You Looking For: ");
 
 					SelectExample = Convert.ToInt32(Console.ReadLine());
@@ -231,6 +233,25 @@ namespace FoundationApplication
 							break;
 						}
 
+					break;
+
+
+				case 4:
+					Console.Write("1. String" +
+								  "\n2. Integer" +
+								  "\nWhat Are You Looking For: ");
+					SelectExample = Convert.ToInt32(Console.ReadLine());
+
+					switch (SelectExample)
+					{
+						case 1:
+							userInput.Example1();
+							break;
+
+						case 2:
+							userInput.Example2();
+							break;
+					}
 					break;
 			}
 			Console.ReadKey();
