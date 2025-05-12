@@ -288,18 +288,14 @@ namespace FoundationApplication
 							break;
 
 						case 5:
-							arithmetic.Divison();
-							break;
-
-						case 6:
 							arithmetic.Modulus();
 							break;
 
-						case 7:
+						case 6:
 							arithmetic.Increment();
 							break;
 
-						case 8:
+						case 7:
 							arithmetic.Decreament();
 							break;
 					}

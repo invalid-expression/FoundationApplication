@@ -43,6 +43,8 @@ namespace FoundationApplication.Operators
 			Console.Write("Enter The Second Number: ");
 			SecondNum = Convert.ToInt32(Console.ReadLine());
 
+			Total = FirstNum * SecondNum;
+
 			Console.WriteLine($"Your Total is: {Total}");
 		}
 
@@ -53,6 +55,8 @@ namespace FoundationApplication.Operators
 
 			Console.Write("Enter The Second Number: ");
 			SecondNum = Convert.ToInt32(Console.ReadLine());
+
+			Total = FirstNum / SecondNum;
 
 			Console.WriteLine($"Your Total is: {Total}");
 		}
