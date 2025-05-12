@@ -33,6 +33,7 @@ namespace FoundationApplication
 			TypeCastingCS typeCasting = new TypeCastingCS();
 			UserInputCS userInput = new UserInputCS();
 			ArithmeticCS arithmetic = new ArithmeticCS();
+			AssignmentCS assignment = new AssignmentCS();
 
 			Console.Write("\n 1. Variables " +
 						  "\n 2. Data Types " +
@@ -259,7 +260,17 @@ namespace FoundationApplication
 
 
 				case 5:
-					Console.Write("1. Addition" +
+					Console.Write("1. Arithmetic " +
+								  "\n2. Assignment" +
+								  "\n3. Comparison" +
+								  "\n4. Logical" +
+								  "\n What Are You Looking For: ");
+					AnotherValue = Convert.ToInt32(Console.ReadLine());
+
+					switch (AnotherValue)
+					{
+						case 1:
+							Console.Write("1. Addition" +
 								  "\n2. Subtraction" +
 								  "\n3. Mulltipication" +
 								  "\n4. Divison" +
@@ -267,36 +278,78 @@ namespace FoundationApplication
 								  "\n6. Increament" +
 								  "\n7. Decreament" +
 								  "\n\n What Are You Looking For: ");
-					SelectExample = Convert.ToInt32(Console.ReadLine());
+							SelectExample = Convert.ToInt32(Console.ReadLine());
 
-					switch (SelectExample)
-					{
-						case 1:
-							arithmetic.Addition();
+							switch (SelectExample)
+							{
+								case 1:
+									arithmetic.Addition();
+									break;
+
+								case 2:
+									arithmetic.Subtraction();
+									break;
+
+								case 3:
+									arithmetic.Multiplication();
+									break;
+
+								case 4:
+									arithmetic.Divison();
+									break;
+
+								case 5:
+									arithmetic.Modulus();
+									break;
+
+								case 6:
+									arithmetic.Increment();
+									break;
+
+								case 7:
+									arithmetic.Decreament();
+									break;
+							}
 							break;
+
 
 						case 2:
-							arithmetic.Subtraction();
-							break;
+							Console.Write("1. Assignment" +
+								"\n2. Add Assignment" +
+								"\n3. Substract Assignment" +
+								"\n4. Mulltiply Assignment" +
+								"\n5. Divide Assignment" +
+								"\n6. Modulus Assignment" +
+								"\n\n What Are You Looking For: ");
 
-						case 3:
-							arithmetic.Multiplication();
-							break;
+							SelectExample = Convert.ToInt32(Console.ReadLine());
 
-						case 4:
-							arithmetic.Divison();
-							break;
+							switch (SelectExample)
+							{
+								case 1:
+									assignment.Assignment();
+									break;
 
-						case 5:
-							arithmetic.Modulus();
-							break;
+								case 2:
+									assignment.AddAssign();
+									break;
 
-						case 6:
-							arithmetic.Increment();
-							break;
+								case 3:
+									assignment.SubstractAssign();
+									break;
 
-						case 7:
-							arithmetic.Decreament();
+								case 4:
+									assignment.MultiplyAssign();
+									break;
+
+								case 5:
+									assignment.DivideAssign();
+									break;
+
+								case 6:
+									assignment.ModulusAssign();
+									break;
+							}
 							break;
 					}
 					break;
