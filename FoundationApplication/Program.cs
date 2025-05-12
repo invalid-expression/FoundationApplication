@@ -1,4 +1,5 @@
 ﻿using FoundationApplication.DataTypes;
+using FoundationApplication.Operators;
 using FoundationApplication.TypeCasting;
 using FoundationApplication.UserInput;
 using FoundationApplication.Variables;
@@ -31,6 +32,7 @@ namespace FoundationApplication
 			DataTypesCS dataTypes = new DataTypesCS();
 			TypeCastingCS typeCasting = new TypeCastingCS();
 			UserInputCS userInput = new UserInputCS();
+			ArithmeticCS arithmetic = new ArithmeticCS();
 
 			Console.Write("\n 1. Variables " +
 						  "\n 2. Data Types " +
@@ -250,6 +252,55 @@ namespace FoundationApplication
 
 						case 2:
 							userInput.Example2();
+							break;
+					}
+					break;
+
+
+
+				case 5:
+					Console.Write("1. Addition" +
+								  "\n2. Subtraction" +
+								  "\n3. Mulltipication" +
+								  "\n4. Divison" +
+								  "\n5. Modulus" +
+								  "\n6. Increament" +
+								  "\n7. Decreament" +
+								  "\n\n What Are You Looking For: ");
+					SelectExample = Convert.ToInt32(Console.ReadLine());
+
+					switch (SelectExample)
+					{
+						case 1:
+							arithmetic.Addition();
+							break;
+
+						case 2:
+							arithmetic.Subtraction();
+							break;
+
+						case 3:
+							arithmetic.Multiplication();
+							break;
+
+						case 4:
+							arithmetic.Divison();
+							break;
+
+						case 5:
+							arithmetic.Divison();
+							break;
+
+						case 6:
+							arithmetic.Modulus();
+							break;
+
+						case 7:
+							arithmetic.Increment();
+							break;
+
+						case 8:
+							arithmetic.Decreament();
 							break;
 					}
 					break;
