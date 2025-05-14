@@ -49,7 +49,6 @@ namespace FoundationApplication
 						  "\n 12. For Loop " +
 						  "\n 13. Break & Continue" +
 						  "\n 14. Array" +
-						  "\n 15. Test" +
 						  "\n\n What Are You Looking For: ");
 
 			Value = Convert.ToInt32(Console.ReadLine());
